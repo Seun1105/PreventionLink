@@ -2,346 +2,609 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PreventionLink Health | Chronic Disease Prevention Infrastructure</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <meta name="description"
-        content="Building scalable prevention infrastructure for chronic disease. A healthcare technology framework that helps health systems and public agencies deploy early-intervention programs.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PreventionLink Health — Scalable Prevention Infrastructure</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>
 
-    <!-- Navigation Header -->
-    <header class="main-header">
-        <div class="container header-container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="ph-bold ph-chart-line-up"></i>
-                </div>
-                <span class="logo-text">PreventionLink Health</span>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#solution">Solution</a></li>
-                    <li><a href="#framework">Framework</a></li>
-                    <li><a href="#users">Use Cases</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-            <div class="header-cta">
-                <button class="btn btn-primary btn-sm">Contact</button>
-            </div>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <div class="nav__logo-mark">
+          <svg width="18" height="18" fill="none" viewBox="0 0 18 18">
+            <path d="M9 2v14M2 9h14" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
         </div>
-    </header>
+        <span class="nav__logo-text">PreventionLink <em>Health</em></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#framework">Framework</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav__cta">Request a Briefing</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <ul>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#framework">Framework</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Request a Briefing</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- 1. Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <!-- Removed duplicate product name since it is in header now -->
-                <h1>Building Scalable Prevention Infrastructure for Chronic Disease</h1>
-                <p>“A healthcare technology framework that helps health systems and public agencies identify prevention
-                    gaps and deploy early-intervention programs at scale.”</p>
-                <div class="hero-actions">
-                    <!-- <button class="btn btn-primary">Request a Briefing <i class="ph-bold ph-arrow-right"
-                            style="margin-left: 8px;"></i></button> -->
-                    <a href="mailto:eirivbogbe@gmail.com" class="btn btn-primary">Partner With Us</a>
-                </div>
-                <div class="credibility">
-                    “Designed by a healthcare product specialist with experience in care coordination and health IT
-                    systems.”
-                </div>
-            </div>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__image-wrap">
+      <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1800&q=80"
+        alt="Patient smiling and receiving compassionate care from a nurse in a hospital" class="hero__bg-img" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <div class="hero__tag reveal">
+          <span class="dot"></span> Healthcare Technology Framework
         </div>
-    </section>
-
-    <!-- 2. The Problem -->
-    <section class="problem-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Chronic Disease Prevention Is Fragmented and Patients Pay the Price</h2>
-            </div>
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <div class="problem-icon"><i class="ph ph-wrench"></i></div>
-                    <h3>Fragmented Tooling</h3>
-                    <p>Health systems lack unified tools to identify high-risk populations early.</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon"><i class="ph ph-columns"></i></div>
-                    <h3>Siloed Efforts</h3>
-                    <p>Prevention efforts are siloed across EHRs, agencies, and community programs.</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon"><i class="ph ph-database"></i></div>
-                    <h3>Data Gaps</h3>
-                    <p>Data exists, but it is not translated into actionable workflows.</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon"><i class="ph ph-clock-countdown"></i></div>
-                    <h3>Late Intervention</h3>
-                    <p>Patients are often identified too late, after conditions worsen.</p>
-                </div>
-            </div>
-            <div class="bridge-sentence">
-                “Prevention fails not because solutions don’t exist, but because systems don’t work together.”
-            </div>
+        <h1 class="hero__headline reveal reveal--delay-1">
+          Building Scalable<br />
+          <em>Prevention Infrastructure</em><br />
+          for Chronic Disease
+        </h1>
+        <p class="hero__sub reveal reveal--delay-2">
+          A healthcare technology framework helping health systems and public agencies identify prevention gaps and
+          deploy early-intervention programs at scale — so every patient gets the care they need, earlier.
+        </p>
+        <div class="hero__actions reveal reveal--delay-3">
+          <a href="#contact" class="btn btn--primary">Request a Briefing</a>
+          <a href="#framework" class="btn btn--white-ghost">Explore the Framework &rarr;</a>
         </div>
-    </section>
-
-    <!-- 3. The Solution -->
-    <section id="solution" class="solution-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>A Product-Driven Framework for Chronic Disease Prevention</h2>
-                <p>A modular, interoperable framework designed to scale prevention efforts.</p>
-            </div>
-            <div class="value-tiles">
-                <div class="value-tile">
-                    <div class="tile-icon"><i class="ph ph-radar"></i></div>
-                    <h3>Identify Risk</h3>
-                    <p>Community-level risk visibility</p>
-                </div>
-                <div class="value-tile">
-                    <div class="tile-icon"><i class="ph ph-gear"></i></div>
-                    <h3>Operationalize Prevention</h3>
-                    <p>Screening and referral workflows</p>
-                </div>
-                <div class="value-tile">
-                    <div class="tile-icon"><i class="ph ph-chart-line-up"></i></div>
-                    <h3>Measure Outcomes</h3>
-                    <p>Continuous monitoring and improvement</p>
-                </div>
-            </div>
+        <p class="hero__cred reveal reveal--delay-4">
+          Designed by a healthcare product specialist with experience in care coordination and health IT systems.
+        </p>
+      </div>
+      <div class="hero__stats reveal reveal--delay-3">
+        <div class="hero__stat">
+          <span class="hero__stat-num">6 in 10</span>
+          <span class="hero__stat-label">Adults have a chronic disease</span>
         </div>
-    </section>
-
-    <!-- 4. How the Framework Works -->
-    <section id="framework" class="architecture-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Product Architecture</h2>
-            </div>
-            <div class="pillars-grid">
-                <div class="pillar-card">
-                    <div class="pillar-header">
-                        <i class="ph ph-brain" style="font-size: 1.5rem; color: var(--primary-color);"></i>
-                        <span class="pillar-title">Prevention Intelligence Layer</span>
-                    </div>
-                    <ul class="pillar-details">
-                        <li>Aggregates deidentified public-health and claims-based indicators</li>
-                        <li>Surfaces geographic and demographic prevention gaps</li>
-                        <li>Supports health-system planning</li>
-                    </ul>
-                </div>
-                <div class="pillar-card">
-                    <div class="pillar-header">
-                        <i class="ph ph-arrows-merge" style="font-size: 1.5rem; color: var(--primary-color);"></i>
-                        <span class="pillar-title">Workflow Enablement</span>
-                    </div>
-                    <ul class="pillar-details">
-                        <li>Converts insights into screening prompts and referrals</li>
-                        <li>Designed to integrate with EHR and care coordination systems</li>
-                        <li>Reduces friction for care teams</li>
-                    </ul>
-                </div>
-                <div class="pillar-card">
-                    <div class="pillar-header">
-                        <i class="ph ph-heart-beat" style="font-size: 1.5rem; color: var(--primary-color);"></i>
-                        <span class="pillar-title">Intervention Enablement</span>
-                    </div>
-                    <ul class="pillar-details">
-                        <li>Supports evidence-based prevention programs</li>
-                        <li>Enables partnerships with community organizations</li>
-                        <li>Tracks enrollment and follow-through</li>
-                    </ul>
-                </div>
-                <div class="pillar-card">
-                    <div class="pillar-header">
-                        <i class="ph ph-circles-three-plus" style="font-size: 1.5rem; color: var(--primary-color);"></i>
-                        <span class="pillar-title">Monitoring & Product Iteration</span>
-                    </div>
-                    <ul class="pillar-details">
-                        <li>Measures adoption and outcomes</li>
-                        <li>Enables continuous system improvement</li>
-                        <li>Built for scale across regions and populations</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">40%</span>
+          <span class="hero__stat-label">Hospitalizations are preventable</span>
         </div>
-    </section>
-
-    <!-- 5. Who This Is Built For -->
-    <section id="users" class="stakeholder-section">
-        <div class="stakeholder-bg-layer" id="stakeholder-bg"></div>
-        <div class="container stakeholder-content">
-            <h2>Who This Is Built For</h2>
-            <div class="stakeholder-grid">
-                <div class="stakeholder-card active"
-                    data-bg="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80">
-                    Health Systems & IDNs
-                </div>
-                <div class="stakeholder-card"
-                    data-bg="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80">
-                    Public Health Agencies
-                </div>
-                <div class="stakeholder-card"
-                    data-bg="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80">
-                    Care Management Teams
-                </div>
-                <div class="stakeholder-card"
-                    data-bg="https://images.unsplash.com/photo-1558494949-efc535b5c4c1?auto=format&fit=crop&q=80">
-                    Health IT Leaders
-                </div>
-                <div class="stakeholder-card"
-                    data-bg="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80">
-                    Payers & ACOs
-                </div>
-            </div>
-            <div style="margin-top: 2rem;">
-                <button class="btn btn-outline">See Use Cases</button>
-            </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">4×</span>
+          <span class="hero__stat-label">ROI on prevention programs</span>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll to learn more</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <!-- 6. Why This Matters -->
-    <section class="impact-section">
-        <div class="container">
-            <div class="impact-content">
-                <div>
-                    <h2>From Reactive Care to Preventive Systems</h2>
-                    <p style="margin-bottom: 2rem; color: var(--text-medium);">Shifting the paradigm from treating
-                        sickness to building health.</p>
-                    <ul class="outcome-list">
-                        <li><i class="ph-fill ph-check-circle outcome-icon"></i> Earlier identification of at-risk
-                            populations</li>
-                        <li><i class="ph-fill ph-check-circle outcome-icon"></i> Fewer preventable hospitalizations</li>
-                        <li><i class="ph-fill ph-check-circle outcome-icon"></i> Better alignment between care delivery
-                            and prevention goals</li>
-                        <li><i class="ph-fill ph-check-circle outcome-icon"></i> Improved health equity through targeted
-                            deployment</li>
-                    </ul>
-                </div>
-                <!-- Placeholder for a system diagram or abstract visual if we had one, CSS shape for now -->
-                <div
-                    style="min-height: 300px; height: 100%; align-self: stretch; border-radius: 12px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background: white; border: 1px solid var(--border-subtle);">
-                    <img src="https://images.unsplash.com/photo-1653213096293-b0e3bba29553?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="System Level Impact Visualization"
-                        style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                </div>
-            </div>
+  <!-- TRUST BAR -->
+  <div class="trustbar">
+    <div class="container">
+      <div class="trustbar__inner">
+        <span class="trustbar__label">Built for</span>
+        <span class="trustbar__item">Health Systems</span>
+        <span class="trustbar__divider">·</span>
+        <span class="trustbar__item">Public Health Agencies</span>
+        <span class="trustbar__divider">·</span>
+        <span class="trustbar__item">Value-Based Care Teams</span>
+        <span class="trustbar__divider">·</span>
+        <span class="trustbar__item">Health IT Leaders</span>
+        <span class="trustbar__divider">·</span>
+        <span class="trustbar__item">Payers &amp; ACOs</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEM -->
+  <section class="problem section" id="problem">
+    <div class="container">
+      <div class="problem__layout">
+        <div class="problem__left reveal">
+          <div class="section-label">The Problem</div>
+          <h2 class="section-heading">
+            Chronic Disease Prevention Is Fragmented &mdash; and Patients Pay the Price
+          </h2>
+          <p class="problem__bridge">
+            "Prevention fails not because solutions don't exist, but because systems don't work together."
+          </p>
+          <a href="#solution" class="btn btn--primary" style="margin-top:2rem;">See the Solution</a>
         </div>
-    </section>
-
-    <!-- 7. About the Founder -->
-    <section id="about" class="founder-section">
-        <div class="container">
-            <div class="founder-container">
-                <div class="founder-image">
-                    <img src="https://i.im.ge/2026/01/26/GpjTrL.IMG-20260125-WA0010.jpeg"
-                        alt="Edugie Irivbogbe"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                </div>
-                <div class="founder-bio">
-                    <span class="founder-title">Healthcare Product Specialist | Health IT & Care Coordination
-                        Systems</span>
-                    <h3>Edugie Irivbogbe, MS</h3>
-                    <p style="margin-top: 1rem; color: var(--text-medium);">
-                        Edugie is a product-forward specialist focused on the intersection of healthcare systems,
-                        scalability, and population health. With deep experience in care coordination and Health IT, she
-                        is building the infrastructure needed to turn prevention data into actionable outcomes at scale.
-                    </p>
-                </div>
-            </div>
+        <div class="problem__right">
+          <ul class="problem__list">
+            <li class="problem__item reveal">
+              <div class="problem__icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M10 6v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div>
+                <h4>Identification Too Late</h4>
+                <p>Patients are often identified after conditions worsen, when intervention costs far more.</p>
+              </div>
+            </li>
+            <li class="problem__item reveal">
+              <div class="problem__icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <rect x="2" y="5" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M6 5V4a4 4 0 018 0v1" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M8 11h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div>
+                <h4>Siloed Systems</h4>
+                <p>Prevention efforts are fragmented across EHRs, agencies, and community programs with no shared view.
+                </p>
+              </div>
+            </li>
+            <li class="problem__item reveal">
+              <div class="problem__icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <path d="M3 15L8 9l4 4 5-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <h4>Data Without Action</h4>
+                <p>Health data exists in abundance but is rarely translated into workflows clinicians can act on.</p>
+              </div>
+            </li>
+            <li class="problem__item reveal">
+              <div class="problem__icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <path d="M10 3v4M10 13v4M3 10h4M13 10h4" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" />
+                  <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div>
+                <h4>No Unified Risk Tools</h4>
+                <p>Health systems lack unified tools to identify and prioritize high-risk populations early.</p>
+              </div>
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- 8. Partnerships -->
-    <section class="partners-section">
-        <div class="container">
-            <h2>Designed for Collaboration and Scale</h2>
-            <p>Interoperable, sustainable, and ready for adoption.</p>
-            <div class="partners-logos">
-                <div class="partner-item">
-                    <i class="ph ph-hospital partner-icon"></i>
-                    <span>Health Systems</span>
-                </div>
-                <div class="partner-item">
-                    <i class="ph ph-database partner-icon"></i>
-                    <span>Health IT Vendors</span>
-                </div>
-                <div class="partner-item">
-                    <i class="ph ph-buildings partner-icon"></i>
-                    <span>Public Health Agencies</span>
-                </div>
-                <div class="partner-item">
-                    <i class="ph ph-users-three partner-icon"></i>
-                    <span>Community Orgs</span>
-                </div>
-            </div>
+  <!-- IMAGE BREAK -->
+  <div class="image-break">
+    <div class="image-break__wrap">
+      <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1800&q=80"
+        alt="Healthcare professionals working collaboratively in a modern clinical environment" class="image-break__img"
+        loading="lazy" />
+      <div class="image-break__caption">
+        <span class="image-break__quote">"Every patient deserves early intervention — not reactive care."</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOLUTION -->
+  <section class="solution section" id="solution">
+    <div class="container">
+      <div class="section-label reveal">The Solution</div>
+      <h2 class="section-heading reveal">
+        A Product-Driven Framework for<br /><em>Chronic Disease Prevention</em>
+      </h2>
+      <p class="solution__desc reveal">
+        A modular, interoperable framework that integrates population-level insights into operational workflows —
+        enabling health systems and public agencies to act earlier and more effectively.
+      </p>
+      <div class="solution__tiles">
+        <div class="tile reveal">
+          <div class="tile__icon">
+            <svg width="32" height="32" fill="none" viewBox="0 0 32 32">
+              <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="16" cy="16" r="6" fill="currentColor" opacity=".15" />
+              <circle cx="16" cy="16" r="2.5" fill="currentColor" />
+            </svg>
+          </div>
+          <h3>Identify Risk</h3>
+          <p>Community-level risk visibility across geographic and demographic segments — before symptoms escalate.</p>
         </div>
-    </section>
-
-    <!-- 9. Early Progress -->
-    <section class="progress-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>From Concept to Implementation</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h4>Framework design completed</h4>
-                </div>
-                <div class="timeline-item">
-                    <h4>Use-case mapping for chronic disease prevention</h4>
-                </div>
-                <div class="timeline-item">
-                    <h4>Product requirements aligned with care coordination workflows</h4>
-                </div>
-                <div class="timeline-item">
-                    <h4>Stakeholder discovery and system alignment</h4>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn btn-primary"
-                    style="background-color: var(--secondary-color);">Download Product
-                    Overview</a>
-            </div>
+        <div class="tile reveal">
+          <div class="tile__icon">
+            <svg width="32" height="32" fill="none" viewBox="0 0 32 32">
+              <rect x="5" y="10" width="22" height="16" rx="3" stroke="currentColor" stroke-width="1.5" />
+              <path d="M11 10V8a5 5 0 0110 0v2" stroke="currentColor" stroke-width="1.5" />
+              <path d="M16 17v4M14 19h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Operationalize Prevention</h3>
+          <p>Screening and referral workflows built into existing EHR and care-coordination systems seamlessly.</p>
         </div>
-    </section>
+        <div class="tile reveal">
+          <div class="tile__icon">
+            <svg width="32" height="32" fill="none" viewBox="0 0 32 32">
+              <path d="M5 24L11 15l5 5 6-9 5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <circle cx="27" cy="17" r="2" fill="currentColor" />
+            </svg>
+          </div>
+          <h3>Measure Outcomes</h3>
+          <p>Continuous monitoring, program effectiveness tracking, and iterative optimization at population scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- 10. Final Call to Action -->
-    <section class="final-cta">
-        <div class="container">
-            <h2>Let’s Build Prevention Systems That Work</h2>
-            <div class="cta-buttons">
-                <a href="mailto:eirivbogbe@gmail.com" class="btn btn-secondary">Partner With Us</a>
-                <a href="mailto:eirivbogbe@gmail.com" class="btn btn-outline">Contact the Founder</a>
+  <!-- FRAMEWORK -->
+  <section class="framework section" id="framework">
+    <div class="container">
+      <div class="section-label reveal">How It Works</div>
+      <h2 class="section-heading reveal">Four-Pillar Product Architecture</h2>
+      <p class="framework__sub reveal">Each pillar builds on the last — from data intelligence all the way to measurable
+        health outcomes.</p>
+      <div class="pillars">
+        <div class="pillar reveal">
+          <div class="pillar__header">
+            <div class="pillar__badge">01</div>
+            <h3>Prevention Intelligence Layer</h3>
+          </div>
+          <ul>
+            <li>Aggregates de-identified public-health and claims-based indicators</li>
+            <li>Surfaces geographic and demographic prevention gaps</li>
+            <li>Supports prioritization for health-system planning</li>
+          </ul>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar__header">
+            <div class="pillar__badge">02</div>
+            <h3>Workflow Enablement</h3>
+          </div>
+          <ul>
+            <li>Translates risk insights into screening prompts and referral pathways</li>
+            <li>Aligns with existing EHR and care-coordination systems</li>
+            <li>Reduces friction for clinicians and care teams</li>
+          </ul>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar__header">
+            <div class="pillar__badge">03</div>
+            <h3>Intervention Enablement</h3>
+          </div>
+          <ul>
+            <li>Supports deployment of evidence-based prevention programs</li>
+            <li>Enables partnerships with community organizations</li>
+            <li>Tracks enrollment and follow-through</li>
+          </ul>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar__header">
+            <div class="pillar__badge">04</div>
+            <h3>Monitoring &amp; Iteration</h3>
+          </div>
+          <ul>
+            <li>Measures adoption, outcomes, and program effectiveness</li>
+            <li>Enables continuous improvement and system optimization</li>
+            <li>Designed for scale across regions and populations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIENCE -->
+  <section class="audience section" id="audience">
+    <div class="container">
+      <div class="audience__layout">
+        <div class="audience__left reveal">
+          <div class="section-label">Who It's Built For</div>
+          <h2 class="section-heading">Built for the People <em>Moving Healthcare Forward</em></h2>
+          <p class="audience__desc">From health systems to community organizations — this framework plugs into the
+            workflows of the people who shape prevention at scale.</p>
+          <a href="#contact" class="btn btn--primary" style="margin-top:2rem;">See Use Cases</a>
+        </div>
+        <div class="audience__grid">
+          <div class="audience__card reveal">
+            <div class="audience__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path d="M3 21h18M5 21V7l7-4 7 4v14" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                <rect x="9" y="13" width="6" height="8" rx="1" stroke="currentColor" stroke-width="1.5" />
+              </svg></div>
+            <h4>Health Systems &amp; IDNs</h4>
+            <p>Proactive population health management at enterprise scale.</p>
+          </div>
+          <div class="audience__card reveal">
+            <div class="audience__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" />
+                <path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20" stroke="currentColor" stroke-width="1.5" />
+              </svg></div>
+            <h4>Public Health Agencies</h4>
+            <p>Scalable prevention coordination across entire communities.</p>
+          </div>
+          <div class="audience__card reveal">
+            <div class="audience__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="1.5" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" />
+              </svg></div>
+            <h4>Care Management Teams</h4>
+            <p>Value-based care and chronic disease management programs.</p>
+          </div>
+          <div class="audience__card reveal">
+            <div class="audience__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5" />
+                <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg></div>
+            <h4>Health IT Leaders</h4>
+            <p>Digital health infrastructure and interoperability at scale.</p>
+          </div>
+          <div class="audience__card reveal">
+            <div class="audience__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor"
+                  stroke-width="1.5" stroke-linejoin="round" />
+              </svg></div>
+            <h4>Payers &amp; ACOs</h4>
+            <p>Prevention-focused cost reduction and quality improvement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT (with photo background) -->
+  <section class="impact section">
+    <div class="impact__bg">
+      <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=1800&q=80"
+        alt="Compassionate healthcare team with patient" class="impact__bg-img" loading="lazy" />
+      <div class="impact__overlay"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="section-label reveal impact-light-label">Why It Matters</div>
+      <h2 class="section-heading reveal impact-light-heading">From Reactive Care to <em
+          class="impact-light-em">Preventive Systems</em></h2>
+      <div class="impact__grid">
+        <div class="impact__stat reveal">
+          <span class="impact__number" data-target="40">0</span><span class="impact__unit">%</span>
+          <p>of hospitalizations are potentially preventable with early intervention</p>
+        </div>
+        <div class="impact__stat reveal">
+          <span class="impact__number" data-target="6">0</span><span class="impact__unit"> in 10</span>
+          <p>Americans live with at least one chronic disease</p>
+        </div>
+        <div class="impact__stat reveal">
+          <span class="impact__number" data-target="4">0</span><span class="impact__unit">×</span>
+          <p>return on investment for prevention-focused healthcare programs</p>
+        </div>
+      </div>
+      <div class="impact__outcomes">
+        <div class="outcome reveal">
+          <div class="outcome__check">✓</div>
+          <p>Earlier identification of at-risk populations</p>
+        </div>
+        <div class="outcome reveal">
+          <div class="outcome__check">✓</div>
+          <p>Fewer preventable hospitalizations</p>
+        </div>
+        <div class="outcome reveal">
+          <div class="outcome__check">✓</div>
+          <p>Better alignment between care delivery and prevention goals</p>
+        </div>
+        <div class="outcome reveal">
+          <div class="outcome__check">✓</div>
+          <p>Improved health equity through targeted deployment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">About the Founder</div>
+
+      <!-- LARGE PHOTO -->
+      <div class="about__photo-hero reveal">
+        <div class="about__photo-frame-hero">
+          <img src="edugie.jpg" alt="Edugie Irivbogbe — Healthcare Product Specialist" class="about__photo-hero-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="about__photo-hero-fallback" style="display:none;">
+            <span>EI</span>
+            <p>Add <code>edugie.jpg</code> to your repo root</p>
+          </div>
+          <div class="about__photo-nameplate">
+            <span class="about__photo-nameplate-name">Edugie Irivbogbe, MS</span>
+            <span class="about__photo-nameplate-role"><span class="dot"></span> Healthcare Product Specialist</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BIO + CREDENTIALS -->
+      <div class="about__lower">
+        <div class="about__left reveal">
+          <h2 class="section-heading">Edugie Irivbogbe, <em>MS</em></h2>
+          <p class="about__title-line">Healthcare Product Specialist · Health IT &amp; Care Coordination Systems</p>
+          <p class="about__bio">Edugie Irivbogbe is a healthcare product specialist currently working at
+            <strong>Axxess</strong>, where she supports technology solutions that enable care coordination and
+            healthcare operations. She holds a <strong>Master of Science in IT Management from the University of
+              Dallas</strong> and specializes in translating complex healthcare needs into scalable, user-centered
+            digital solutions.
+          </p>
+          <p class="about__bio">Her work focuses on building systems that improve access, efficiency, and outcomes
+            across the healthcare ecosystem — particularly in chronic disease prevention and population health.</p>
+          <a href="#contact" class="btn btn--primary" style="margin-top:2rem;">Connect with Edugie</a>
+        </div>
+        <div class="about__right reveal">
+          <div class="about__card">
+            <div class="about__credentials">
+              <div class="cred-item">
+                <span class="cred-label">Current Role</span>
+                <span class="cred-value">Healthcare Product Specialist, Axxess</span>
+              </div>
+              <div class="cred-item">
+                <span class="cred-label">Education</span>
+                <span class="cred-value">MS, IT Management — University of Dallas</span>
+              </div>
+              <div class="cred-item">
+                <span class="cred-label">Specialization</span>
+                <span class="cred-value">Health IT &amp; Care Coordination Systems</span>
+              </div>
+              <div class="cred-item">
+                <span class="cred-label">Focus Areas</span>
+                <span class="cred-value">Chronic Disease Prevention · Population Health</span>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <footer>
-        <div class="container">
-            &copy; 2025 PreventionLink Health. All rights reserved.
+    </div>
+  </section>
+
+  <!-- PROGRESS -->
+  <section class="progress section">
+    <div class="container">
+      <div class="section-label reveal">Early Progress</div>
+      <h2 class="section-heading reveal">From Concept to <em>Implementation</em></h2>
+      <div class="progress__steps">
+        <div class="progress__step active reveal">
+          <div class="progress__dot"></div>
+          <div class="progress__content">
+            <h4>Framework Design</h4>
+            <p>Core architecture completed and documented</p>
+          </div>
         </div>
-    </footer>
+        <div class="progress__step active reveal">
+          <div class="progress__dot"></div>
+          <div class="progress__content">
+            <h4>Use-Case Mapping</h4>
+            <p>Chronic disease prevention scenarios modeled</p>
+          </div>
+        </div>
+        <div class="progress__step active reveal">
+          <div class="progress__dot"></div>
+          <div class="progress__content">
+            <h4>Product Requirements</h4>
+            <p>Aligned with care coordination workflows</p>
+          </div>
+        </div>
+        <div class="progress__step reveal">
+          <div class="progress__dot"></div>
+          <div class="progress__content">
+            <h4>Stakeholder Discovery</h4>
+            <p>System alignment and partner outreach in progress</p>
+          </div>
+        </div>
+      </div>
+      <div class="progress__cta reveal">
+        <a href="#" class="btn btn--outline">Download Product Overview</a>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- PARTNERS -->
+  <section class="partners section">
+    <div class="container">
+      <div class="section-label reveal">Partnerships</div>
+      <h2 class="section-heading reveal">Designed for <em>Collaboration and Scale</em></h2>
+      <p class="partners__desc reveal">This framework is intended to be implemented in partnership with health systems,
+        public agencies, and community organizations to ensure adoption, interoperability, and long-term sustainability.
+      </p>
+      <div class="partners__grid">
+        <div class="partner-cat reveal">Health Systems</div>
+        <div class="partner-cat reveal">Health IT Vendors</div>
+        <div class="partner-cat reveal">Public Health Agencies</div>
+        <div class="partner-cat reveal">Community-Based Organizations</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="section-label reveal">Get Involved</div>
+        <h2 class="section-heading reveal">Let's Build Prevention Systems <em>That Work</em></h2>
+        <p class="contact__sub reveal">Whether you're a health system, agency, or technology partner — we'd like to hear
+          from you.</p>
+        <form class="contact__form reveal" id="contactForm">
+          <div class="form__row">
+            <div class="form__field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form__field">
+              <label for="org">Organization</label>
+              <input type="text" id="org" placeholder="Your organization" />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form__field">
+              <label for="role">Your Role</label>
+              <select id="role">
+                <option value="">Select your role</option>
+                <option>Health System / IDN</option>
+                <option>Public Health Agency</option>
+                <option>Health IT / Digital Health</option>
+                <option>Payer / ACO</option>
+                <option>Care Management Team</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__field form__field--full">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Tell us how you'd like to collaborate…"></textarea>
+          </div>
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary btn--large">Partner With Us</button>
+            <button type="button" class="btn btn--outline-dark"
+              onclick="document.getElementById('contactForm').reset()">Clear Form</button>
+          </div>
+        </form>
+        <div class="contact__success" id="formSuccess">
+          <span class="success-icon">✓</span>
+          <p>Thank you! We'll be in touch shortly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo-mark">
+            <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+              <path d="M7 1v12M1 7h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <span>PreventionLink Health</span>
+        </div>
+        <p class="footer__tagline">Building scalable prevention infrastructure for chronic disease.</p>
+        <p class="footer__copy">&copy; 2025 PreventionLink Health · Edugie Irivbogbe, MS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
